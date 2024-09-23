@@ -12,15 +12,15 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.hellodream.ltd", custom_domain = true },
-#   { pattern = "quay.hellodream.ltd", custom_domain = true },
-#   { pattern = "gcr.hellodream.ltd", custom_domain = true },
-#   { pattern = "k8s-gcr.hellodream.ltd", custom_domain = true },
-#   { pattern = "k8s.hellodream.ltd", custom_domain = true },
-#   { pattern = "ghcr.hellodream.ltd", custom_domain = true },
-#   { pattern = "cloudsmith.hellodream.ltd", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.hellodream.ltd", custom_domain = true },
+  { pattern = "quay.hellodream.ltd", custom_domain = true },
+  { pattern = "gcr.hellodream.ltd", custom_domain = true },
+  { pattern = "k8s-gcr.hellodream.ltd", custom_domain = true },
+  { pattern = "k8s.hellodream.ltd", custom_domain = true },
+  { pattern = "ghcr.hellodream.ltd", custom_domain = true },
+  { pattern = "cloudsmith.hellodream.ltd", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
